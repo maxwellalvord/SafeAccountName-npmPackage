@@ -1,0 +1,11 @@
+{
+  "name": "npm-safeaccountname",
+  "version": "1.0.0",
+  "description": "Protect users from entering names banned by third party server owners.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Maxwell Alvord",
+  "license": "ISC"
+}
