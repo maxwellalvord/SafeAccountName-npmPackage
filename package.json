@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Protect users from entering names banned by third party server owners.",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

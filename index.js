@@ -38,3 +38,5 @@ export const CheckName = (name) => {
 
   }
 }
+// testing possible regex solutions to check for hidden words
+// console.log("regex test:","hellomom".match(/mom/));
