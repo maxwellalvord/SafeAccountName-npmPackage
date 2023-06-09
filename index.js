@@ -1,12 +1,6 @@
 export const CheckName = (name) => {
-  const start = performance.now();
-  const wordList = ["antidisestablishmentarianism", ".adSensepostnottherenonobook", "actSensepostnottherenonotive", "acunetix-wvs-test-for-some-inexistent-file", "appscan_fingerprint/mac_address", "arachni-", "cybercop", "nessus_is_probing_you_", "nessustest", "netsparker-", "rfiinc.txt", "thereisnowaythat-you-canbethere", "w3af/remotefileinclude.html", "appscan_fingerprint", "w00tw00t.at.ISC.SANS.DFind", "w00tw00t.at.blackhats.romanian.anti-sec"]
   if (typeof name !== 'string') {
     let stringName = name.toString();
-    
-    // if (wordList.includes(stringName)) {
-    //   throw Error("Sorry that name has been blocked by the server host");
-    // }
     
     switch(stringName) {
       case "antidisestablishmentarianism":
@@ -44,14 +38,10 @@ export const CheckName = (name) => {
       case "w00tw00t.at.blackhats.romanian.anti-sec":
         throw Error("Sorry that name has been blocked by the server host");
       default:
-        console.log("success");
+        console.log("safe UserName!");
     }
   } else {
     let stringName = name;
-
-    // if (wordList.includes(stringName)) {
-    //   console.log("Sorry that name has been blocked by the server host");
-    // }
 
     switch(stringName) {
       case "antidisestablishmentarianism":
@@ -69,8 +59,7 @@ export const CheckName = (name) => {
       case "arachni-":
         throw Error("Sorry that name has been blocked by the server host");
       case "cybercop":
-        console.log("Sorry that name has been blocked by the server host");
-        break;
+        throw Error("Sorry that name has been blocked by the server host");
         case "nessus_is_probing_you_":
         throw Error("Sorry that name has been blocked by the server host");
       case "nessustest":
@@ -90,17 +79,9 @@ export const CheckName = (name) => {
       case "w00tw00t.at.blackhats.romanian.anti-sec":
         throw Error("Sorry that name has been blocked by the server host");
       default:
-        console.log("success");
-    }
-    
+        console.log("safe Username!");
+    } 
   }
-  const end = performance.now();
-  console.log(`Execution time: ${end - start} ms`);
 }
-// testing possible regex solutions to check for hidden words
-// console.log("regex test:","hellomom".match(/mom/));
 
-// CheckName("cyber");
-CheckName("cybercop");
-// CheckName("cyber");
 
